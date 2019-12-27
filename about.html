@@ -7,6 +7,7 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="js/about.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -23,8 +24,12 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="http://use.fontawesome.com/releases/v5.4.1/css/all.css"
       rel="stylesheet"
@@ -32,70 +37,60 @@
   </head>
 
   <body>
-    <img src="img/1.jpg" width="1430" height="1000" />
-    <div class="container">
-      <h1 class="title">ABOUT ME.</h1>
-    </div>
-    <div class="box">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <section class="info">
-      <div class="containerTwo">
-        <img src="img/2.jpg" width="640" class="rotateimg90" />
-
-        <p class="bio" data-aos="fade-right">
+    
+    <main>
+      <section>
+        <img src="img/1.jpg" width="1430" height="1000" />
+        <div id="scroll-button" class="title">
+          <h1>ABOUT ME</h1>
+          <div aria-role="button" class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section class="basic-block info" id="info">
+        <img src="img/2.jpg" height="670" class="rotateimg90" />
+      
+        <p class="bio content-paragraph" data-aos="fade-right">
           I am a third year Software Engineering student studying at the
           University of Guelph. Currently, I am doing my second successive co-op
           work term at Scalar Decisions based in Toronto.
         </p>
-      </div>
-    </section>
-
-    <section class="age" data-aos="ease-in">
-      <div class="containerThree">
+      </section>
+      
+      <section class="basic-block age" data-aos="ease-in">
         <img src="img/3.jpg" width="1240" />
-        <h1 class="sentence" data-aos="fade-left">
-          I am <br /><br />20 <br /><br />years old
-        </h1>
-      </div>
-    </section>
-
-    <section class="hobbies">
-      <div class="containerThree">
-        <p class="hobbyStatement" data-aos="fade-in">
+        <span class="sentence" data-aos="fade-left">
+          <span>I am</span>
+          <span>20</span>
+          <span>years old</span>
+        </span>
+      </section>
+      
+      <section class="basic-block">
+        <p class="content-paragraph" data-aos="fade-in">
           Alongside my academics, I enjoy the freedom to explore new things. I
           have a deep passion for multimedia and cinematography. I like working
           on my Youtube Channel and minor side projects during my leisure time.
         </p>
-      </div>
-    </section>
+      </section>
+      
+      <section class="video-section">
+        <h2 class="vidText">My Work</h2>
+        <div class="video-list">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DKZBmct_VJo" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/nPWdeYrAs00" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
 
-    <div class="videoOne">
-      <p class="vidText" >My Work</p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/DKZBmct_VJo"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/nPWdeYrAs00"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <section class="youtube">
+    </main>
+    <footer>
       <div class="s-m">
         <a href="https://www.youtube.com/mrreddevil018"target="_blank"
         href="#"><i class="fab fa-youtube"></i></a>
@@ -103,9 +98,8 @@
       <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </a>
       </div>
-    </section>
+    </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 400,

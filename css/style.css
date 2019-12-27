@@ -8,7 +8,6 @@ body {
   padding: 0;
   perspective: 1px;
   transform-style: preserve-3d;
-  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: "Luna";
@@ -17,13 +16,10 @@ body {
 header {
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 30vw 0 5vw;
   position: relative;
   transform-style: inherit;
   width: 100vw;
-}
-header h1 {
-  margin-top: -100px;
+  position: relative;
 }
 header,
 header:before {
@@ -39,10 +35,21 @@ header::before {
   display: block;
   background-image: url("../img/3.jpg");
   background-size: cover;
+  background-position: center;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   min-height: 100vh;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  margin: calc(50vh - 100px) calc(50vw - 325px);
+  width: 650px;
 }
 
 header * {
@@ -53,34 +60,34 @@ header * {
   padding: 1em 0;
 }
 
-.navBar {
-  position: absolute;
-  width: 100%;
-}
 nav {
-  float: right;
-  width: 2000px;
+  position: absolute;
+  bottom: -600px;
+  width: 100%;
 }
 
 nav ul {
   background: rgb(255, 255, 255);
-  margin-bottom: 20px;
-  margin-top: 700px;
-  margin-left: 70px;
   list-style: none;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem calc(50% - 500px);
+  height: 226px;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 35px;
-  height: 300px;
   position: sticky;
+  min-width: 8rem;
+  max-width: 16rem;
 }
 
 nav a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  cursor: pointer;
 }
 
 nav a:hover {
