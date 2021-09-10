@@ -1,3 +1,5 @@
+
+
 $(function () {
   function setHeight() {
     $(".response").each(function (index, element) {
@@ -17,3 +19,5 @@ $(function () {
 
   setHeight();
 });
+
+
