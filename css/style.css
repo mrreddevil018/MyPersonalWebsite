@@ -33,7 +33,7 @@ header::before {
   right: 0;
   top: 0;
   display: block;
-  background-image: url("https://iruchal.github.io/main.jpg");
+  background-image: url("./img/main.JPG");
   background-size: cover;
   background-position: center;
   transform-origin: center center 0;
