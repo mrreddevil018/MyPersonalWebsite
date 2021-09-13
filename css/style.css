@@ -33,7 +33,7 @@ header::before {
   right: 0;
   top: 0;
   display: block;
-  background-image: url("../img/3.jpg");
+  background-image: url("../img/main.jpg");
   background-size: cover;
   background-position: center;
   transform-origin: center center 0;
