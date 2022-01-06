@@ -45,13 +45,13 @@
 
 
       <div class = "info" style="color:black">
-        <h5>Fifth Year Software Engineering Student</h5>
+        <h5 class = "infotext">Fifth Year Software Engineering Student</h5>
       </div>
 
       <nav>
               
         <ul>
-          <li><a href="report.html" target="_blank"> WORK TERM REPORT</a></li>
+          <li><a href="exp.html" target="_blank"> WORK EXPERIENCE</a></li>
           <li><a href="about.html" target="_blank"> ABOUT ME</a></li>
           <li>
             <a href="https://github.com/iruchal" target="_blank"> GITHUB</a>
@@ -64,8 +64,14 @@
               LINKEDIN</a
             >
           </li>
+          <li><a href="report.html" target="_blank"> WORK TERM REPORT</a></li>
         </ul>
       </nav>
     </header>
+    <script>
+      $(function () {
+        $("#ftco-section").load("nav.html");
+      });
+    </script>
   </body>
 </html>
