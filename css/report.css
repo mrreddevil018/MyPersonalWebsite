@@ -24,6 +24,12 @@ section {
   color: #f8f8f8;
 }
 
+.buttons {
+  text-align: center;
+  padding: 50px;
+  color: #f8f8f8;
+}
+
 p {
   font-size: 1.2rem;
 }

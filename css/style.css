@@ -60,6 +60,12 @@ header * {
   padding: 1em 0;
 }
 
+.info {
+  position: absolute;
+  bottom: -450px;
+  width: 100%;
+}
+
 nav {
   position: absolute;
   bottom: -600px;
@@ -74,7 +80,7 @@ nav ul {
   justify-content: space-around;
   align-items: flex-start;
   padding: 2rem calc(50% - 500px);
-  height: 226px;
+  height: 125px;
 }
 
 nav li {
